@@ -13,7 +13,7 @@ const Footer = () => {
 
         console.warn(name, email, message);
 
-       let a= await fetch('http://localhost:4000/submit', {
+     await fetch('http://localhost:3000/submit', {
 
             method: 'post',
             body: JSON.stringify({ name, email, message }),
@@ -50,7 +50,7 @@ const Footer = () => {
                             <div className="d-flex">
                                 {/* <a className="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i className="fab fa-facebook-f"></i></a>
                                 <a className="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fa-brands fa-github"></i></a> */}
-                                <a className="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.linkedin.com/in/ujjal-ray-41776b254/"><i className="fab fa-linkedin-in"></i></a>
+                                <a className="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.linkedin.com/in/ritikasinha96/"><i className="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
 

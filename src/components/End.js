@@ -14,7 +14,7 @@ const End = () => {
                             </div>
                             <div className="col-md-6 text-center text-md-end">
 
-                                Designed By <a href="https://www.linkedin.com/in/ujjal-ray-41776b254/">Ujjal Ray</a>
+                                Designed By <a href="https://www.linkedin.com/in/ritikasinha96/">Ritika Sinha</a>
                             </div>
                         </div>
                     </div>
