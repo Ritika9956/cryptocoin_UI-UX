@@ -10,7 +10,6 @@ import { Table } from 'react-bootstrap';
 const Data = () => {
 
     const [coins, setCoins] = useState([]);
-    const [search, setSearch] = useState('');
     let i = 1;
 
     useEffect(() => {
@@ -25,7 +24,7 @@ const Data = () => {
             })
 
 
-    }, [search]);
+    }, []);
 
 
     return (
@@ -38,7 +37,7 @@ const Data = () => {
 
 
 
-                    <Table class="table table-dark"  >
+                    <Table className="table table-dark"  >
                         <thead>
                             <tr>
                                 <th scope="col">Rank</th>
@@ -68,10 +67,10 @@ const Data = () => {
 
                                 return (
 
-                                    <tr scope="row" >
+                                    <tr key={coin.id}>
 
                                         <td>{i}</td>
-                                        <td> <img src={coin.image} height="30" width="30"></img></td>
+                                        <td> <img src={coin.image} height="30" width="30" alt={`${coin.name} logo`} /></td>
                                         <th> {coin.name}</th>
                                         <td> {coin.symbol.toUpperCase()}</td>
                                         <td> {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'USD' }).format(coin.current_price)}</td>

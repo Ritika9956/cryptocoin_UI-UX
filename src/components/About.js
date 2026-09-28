@@ -31,9 +31,7 @@ const About = () => {
                                     <i className="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
                                     <span>24/7 support and fast transactions</span>
                                 </div>
-                                <Link to="/home" >   <a className="btn btn-primary py-3 px-4" href="">Read More</a>
-
-                                </Link>
+                                <Link to="/home" className="btn btn-primary py-3 px-4">Read More</Link>
 
                             </div>
                         </div>

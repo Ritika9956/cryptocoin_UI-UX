@@ -1,16 +1,24 @@
 import React from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Navber = () => {
     return (
         <div>
 
             <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
 
-                <Link to="/" className="nav-item nav-link"><a href="index.html" className="navbar-brand d-flex align-items-center">
+                <Link to="/" className="navbar-brand d-flex align-items-center">
                     <h2 className="m-0 text-primary"><img className="img-fluid me-2" src="img/icon-1.png" alt="" style={{ width: "45px" }} />CryptoCoin</h2>
-                </a></Link>
+                </Link>
 
-                <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button
+                    type="button"
+                    className="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded={false}
+                    aria-label="Toggle navigation"
+                >
                     <span className="navbar-toggler-icon"></span>
                 </button>
 

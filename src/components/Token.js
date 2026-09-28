@@ -1,27 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 const Token = () => {
-
-    const [coins, setCoins] = useState([]);
-   
-    let i = 1;
-
-    useEffect(() => {
-
-        axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false`)
-            .then(res => {
-                const responce = res.data;
-                console.log(responce);
-                setCoins(responce);
-
-
-            })
-
-
-    }, );
-
-
 
     return (
         <div>
@@ -58,7 +37,7 @@ const Token = () => {
                             </div>
                         </div>
                         <div className="col-12 text-center py-4">
-                            <a className="btn btn-primary py-3 px-4" href="">Buy Token</a>
+                            <button type="button" className="btn btn-primary py-3 px-4">Buy Token</button>
                         </div>
                         <div className="col-12 text-center">
                             <img className="img-fluid m-1" src="img/payment-1.png" alt="" style={{ maxWidth: "50px" }} />
