@@ -8,10 +8,8 @@ import ErrorPage from './components/ErrorPage';
 import Header from './components/Header';
 import Services from './components/Services';
 import Token from './components/Token';
-import Data from './components/Data';
 import CoinData from './components/CoinData';
 import End from './components/End';
-import Roodmap from './Roodmap';
 
 function App() {
   return (
